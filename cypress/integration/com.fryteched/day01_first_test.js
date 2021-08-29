@@ -24,7 +24,8 @@ describe('My First Test', () => {
     it('Title Test', () => {
         
         cy.visit("https://www.google.com/");
-        cy.title().should("eq", "Google");
+        cy.title().should("eq", "Google"); // title() metodu ile ilgili web sitesinin title nı alırız ve devamında 
+                                            // "eq" ile eşit mi diyoruz. "Google" eşit ise true dönecektir. 
     });
     
 });
