@@ -39,8 +39,8 @@ describe('Navigation', () => {
 
         cy.xpath(loginButton)
             .click()//Login button click 
-            .go(-1)
-            .go(1); // Back to return page
+            .go(-1)// Back to return page
+            .go(1); // Forward to page
 
 
     });

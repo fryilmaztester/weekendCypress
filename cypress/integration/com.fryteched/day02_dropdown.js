@@ -25,7 +25,7 @@ describe('DropDown TestCase', () => {
                 .should("have.value","1"); // seçililen dropdown da içindeki değerde 1 olup olmadığına bakar. 
         
 
-        console.log(cy.xpath(dropDown).text());
+        
 
 
     });
