@@ -39,7 +39,18 @@ describe('checkboxes', () => {
         //normalde click() tek elemana tıklamak için uygulanır. Birden fazla elemana uygulamak için 
         //{multiple:true} kullanılır. click({multiple:true});  
 
+        //Assertion Operation
 
+        //1)
+        cy.get("input[type='checkbox']").first().should("be.checked");
+
+
+        //2)
+        cy.get("input[type='checkbox']").first().parent().should("have.class","checked"); //ilgili locatorun ın parentındaki class attribute u cehecked mı? diye asseriton işlemi yapıyor.
         
+
+        //3)
+        //should("have.id","checked");
+        //should("have.type","checked"); şeklinde asseriton işlemleri yapabiliriz  
         });
 });
