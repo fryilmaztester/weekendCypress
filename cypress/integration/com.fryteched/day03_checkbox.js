@@ -34,6 +34,12 @@ describe('checkboxes', () => {
         cy.visit(url);
         cy.xpath("//a[@title='Women']").click();
 
-        cy.xpath("//input[@type='checkbox']").click({multiple:true});
-    });
+        cy.xpath("//input[@type='checkbox']").click({multiple:true}); 
+
+        //normalde click() tek elemana tıklamak için uygulanır. Birden fazla elemana uygulamak için 
+        //{multiple:true} kullanılır. click({multiple:true});  
+
+
+        
+        });
 });
