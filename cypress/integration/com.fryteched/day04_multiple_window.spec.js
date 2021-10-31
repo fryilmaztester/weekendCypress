@@ -1,6 +1,5 @@
 /// <reference types = "cypress" />
 
-import { element } from "wd/lib/commands";
 
 describe('Multiple Window', () => {
     

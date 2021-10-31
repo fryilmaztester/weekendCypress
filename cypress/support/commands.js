@@ -23,3 +23,26 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+// Cypress.Commands.add --> Komut ekle demektir. 
+ Cypress.Commands.add("login", (email,passWord) =>{
+     cy.visit("http://automationpractice.com/index.php")
+
+     cy.get(".login").click();
+     cy.get("#email").type(email);
+     cy.get("#passwd").type(passWord);
+
+     cy.get(".icon-lock.left").click();
+     //cy.get('#SubmitLogin > span').click();
+ })
+
+ Cypress.Commands.add("searchAmazon", (productName) => {
+    cy.visit("https://www.amazon.com/");
+    cy.get("#twotabsearchtextbox").type(productName);
+
+    cy.get("#nav-search-submit-button").click();
+ })
+
+//----------File Upload-----------  https://www.npmjs.com/package/cypress-file-upload  ------
+ import 'cypress-file-upload';

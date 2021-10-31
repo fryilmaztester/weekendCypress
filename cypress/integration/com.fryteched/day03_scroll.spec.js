@@ -18,7 +18,12 @@ describe('scroll', () => {
 
         cy.scrollTo("bottom"); //scrollTo("bottom"); --> sayfanın en altına indirir 
 
+        // cy.scrollTo("top"); //scrollTo("top"); --> sayfanın en üstüne indirir 
+
         cy.scrollTo(0,1000); // 1000 kadar aşağıya git demektir bu 
+       
         
     })
+
+   
 });

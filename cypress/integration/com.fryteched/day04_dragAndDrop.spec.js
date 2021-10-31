@@ -6,7 +6,10 @@ Drag and Drop işlemleri
 
 */
 
+/// <reference types = "cypress" />
+
 import '@4tw/cypress-drag-drop'
+
 
 describe('Drag and Drop', () => {
 
@@ -16,9 +19,35 @@ describe('Drag and Drop', () => {
         
         cy.visit(URL);
 
+        
         cy.get("#dblClkBtn").dblclick(); //Çift Tıklama için 
 
-        cy.get("#dblClkBtn").rightclick(); //Sağ tıklama için 
+       // cy.get("#dblClkBtn").rightclick(); //Sağ tıklama için 
+
+       cy.on("window:alert",(str)=>{
+           //Assert işslemi 
+
+           //1)
+           //expect(str).to.equal("hi, JavaTpoint Testing");
+           
+           //2)
+           //expect(str).to.eq("hi, JavaTpoint Testing");
+
+           //3
+           expect(str).to.contain("Java");
+       })
+    });
+
+    it.only('Drag and Drop', () => {
+        
+        cy.visit(URL);
+
+        //cy.get("#sourceImage") //Drag nesnemizin locator u
+        //cy.get("#targetDiv") //Drop edeceğimiz yerin locator ı
+
+        cy.get("#sourceImage").
+           drag("#targetDiv");
+
     });
 });
 
