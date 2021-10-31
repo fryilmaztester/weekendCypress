@@ -7,7 +7,7 @@ Cypress te iframe testi yapabilmek içn izlenecek yollar
 
     1) npm install ile ------>>>>>>>    "npm install -D cypress-iframe" iframe package yukle
     2) iframe ile cypress in communicate i icin import edilmeli  --->>>>>  "import 'cypress-iframe';"
-    3)cy.frameLoaded(Locator) ile iframe in yerini tanımlayarak iframe i yukluyoruz. 
+    3) cy.frameLoaded(Locator) ile iframe in yerini tanımlayarak iframe i yukluyoruz. 
     4) iframe e gitmek için cy.iframe() komutunu kullanıyoruz. 
 
 
@@ -33,6 +33,7 @@ describe('Iframe Test', () => {
 
     });
 
+    it
 
 
 });

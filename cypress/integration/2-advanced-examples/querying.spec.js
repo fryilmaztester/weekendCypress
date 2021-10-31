@@ -39,7 +39,7 @@ context('Querying', () => {
       .and('have.css', 'position', 'static')
   })
 
-  it('cy.contains() - query DOM elements with matching content', () => {
+  it.only('cy.contains() - query DOM elements with matching content', () => {
     // https://on.cypress.io/contains
     cy.get('.query-list')
       .contains('bananas')

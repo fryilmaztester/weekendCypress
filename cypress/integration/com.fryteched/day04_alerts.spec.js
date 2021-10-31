@@ -23,6 +23,8 @@ describe('allerts', () => {
 
     var url= "https://the-internet.herokuapp.com/javascript_alerts";
 
+    
+
     it('alert test', () => {
         
         cy.visit(url); 

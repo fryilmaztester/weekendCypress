@@ -23,8 +23,8 @@ describe('File Upload', () => {
         const imageList = ["image01.jpeg","image02.jpeg","image03.jpeg"];
         cy.visit(URL);
         
-        //cy.get("#filesToUpload").attachFile(path01).attachFile(path02).attachFile(path03);
-        cy.get("#filesToUpload").attachFile(imageList);
+        //cy.get("#filesToUpload").attachFile(path01).attachFile(path02).attachFile(path03); // tek tek ekleme
+        cy.get("#filesToUpload").attachFile(imageList); //list in içine koyup ekleme
 
         cy.get("#fileList").should("include.text","image");
 
